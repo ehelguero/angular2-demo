@@ -14,9 +14,10 @@
     <!-- 2. configure systemjs -->
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){
-        console.error(err);
-      });
+      // this loads our application's code
+      System.import('app')
+      .catch(function(err){ console.error(err); });
+      // up -> error messages should be printed out to the console
     </script>
   </head>
   <body>
